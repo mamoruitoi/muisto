@@ -28,8 +28,15 @@ def main():
     generateFiles()
     generateIndexPages()
 
-#生成に必要な設定ファイルを読み込み
+#生成に必要な設定ファイルがあるかどうかを確認し、なければデフォルト内容で生成
 def generateRequiredFiles():
+    #ファイルがなければデフォルト内容で生成
+    if not os.path.isfile("about.html"):
+        with open("about.html", "w") as f:
+            f.write(defaultAbout)
+    if not os.path.isfile("config.md"):
+        with open("config.md", "w") as f:
+            f.write(defaultConfig)
     #ファイルを開いて中身を変数に代入
     with open("about.html") as f:
         about = f.read()
@@ -153,7 +160,7 @@ def generateFiles():
 <meta name="twitter:site" content="@{twitter}">
 <meta property="og:url" content="{url}{fileName}.html">
 <meta property="og:title" content="{title}">
-<meta property="og:image" content="img/{cover}">
+<meta property="og:image" content="{url}img/{cover}">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
 </head>
 <body>
@@ -199,6 +206,8 @@ direction: "top"
             f.write(templateOfHead1)
             f.write(script)
             f.write(templateOfHead2.replace("{0}", generateButtons(config)))
+            global muistoFlag
+            muistoFlag = False
             for i, line in enumerate(lines):
                 f.write(generateHTML(i, line, fileName))
             f.write(f"""
@@ -338,6 +347,7 @@ def convertMuistoCodes(fileName):
 <li class="shareList-item"><a class="icon icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://mamoruitoi.github.io/" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a></li>
 </ul>
 """.format(cover, title, date, place, writer, mode, tags, data[fileName]["title"], config["top"]["name"], config["top"]["title"], config["top"]["url"]+fileName)
+    print(templateOfData)
     return templateOfData
 
 def generateIndexPages():
@@ -379,7 +389,7 @@ def generateIndexPages():
 <meta name="twitter:site" content="@{twitter}">
 <meta property="og:url" content="{url}{fileName}.html">
 <meta property="og:title" content="{title}">
-<meta property="og:image" content="../img/{cover}">
+<meta property="og:image" content="{url}img/{cover}">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
 </head>
 <body>
@@ -480,7 +490,7 @@ direction: "top"
 <meta name="twitter:site" content="@{twitter}">
 <meta property="og:url" content="{url}{fileName}.html">
 <meta property="og:title" content="{title}">
-<meta property="og:image" content="../img/{cover}">
+<meta property="og:image" content="{url}img/{cover}">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
 </head>
 <body>
@@ -572,7 +582,7 @@ def generateLink(fileName):
 def generateTags(tags):
     result = ""
     for tag in tags:
-        result += "<a href=\"{0}tags/{1}.html\"><span class=\"tag\">{1}</span></a>".format(config["top"]["title"], tag)
+        result += f"<a href=\"./tags/{tag}.html\"><span class=\"tag\">{tag}</span></a>"
     return result
 
 #フローティングボタンのリンクを生成
