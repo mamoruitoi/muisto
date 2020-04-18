@@ -28,15 +28,8 @@ def main():
     generateFiles()
     generateIndexPages()
 
-#生成に必要な設定ファイルがあるかどうかを確認し、なければデフォルト内容で生成
+#生成に必要な設定ファイルを読み込み
 def generateRequiredFiles():
-    #ファイルがなければデフォルト内容で生成
-    if not os.path.isfile("about.html"):
-        with open("about.html", "w") as f:
-            f.write(defaultAbout)
-    if not os.path.isfile("config.md"):
-        with open("config.md", "w") as f:
-            f.write(defaultConfig)
     #ファイルを開いて中身を変数に代入
     with open("about.html") as f:
         about = f.read()
@@ -705,5 +698,3 @@ def span(text):
         result += phraseResult + "</span>"
         phraseResult = ""
     return result
-
-main()

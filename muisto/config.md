@@ -1,14 +1,14 @@
 @theme: "muisto_light"
 @cover: "oblivion.png"
-@title: "学生Pythonプログラマの日常"
+@title: "タイトル"
 @icon: "home"
 @color: "red lighten-2"
-@writer: "Mamoru Itoi"
+@writer: "Your Name"
 @place: "Tokyo"
-@url: "file:///Users/mamoruitoi/muisto/"
+@url: "/URL-of-your-website"
 @name: "Oblivion"
 @fav: "favicon.ico"
-@twitter: "MamoruItoi"
+@twitter: "Your Name"
 @github: "mamoruitoi"
 @logo: "oblivion-logo.png"
 
@@ -17,25 +17,25 @@
 @color: "amber lighten-2"
 @cover: "header.png"
 @theme: "muisto_light"
-@writer: "Mamoru Itoi"
+@writer: "Your Name"
 
 # code
 @icon: "build"
 @color: "teal lighten-2"
 @cover: "header.png"
 @theme: "muisto_light"
-@writer: "Mamoru Itoi"
+@writer: "Your Name"
 
 # blog
 @icon: "event"
 @color: "blue lighten-2"
 @cover: "header.png"
 @theme: "muisto_light"
-@writer: "Mamoru Itoi"
+@writer: "Your Name"
 
 # news
 @icon: "explore"
 @color: "purple lighten-3"
 @cover: "header.png"
 @theme: "muisto_light"
-@writer: "Mamoru Itoi"
+@writer: "Your Name"
