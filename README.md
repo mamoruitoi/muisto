@@ -12,7 +12,7 @@ $ sudo pip install -e .
 
 ## 機能
 ### 見出しを見やすく
-見出しを形態素解析して文節に分解し、<span>で囲むことで、どことは言いませんが[こういうサイト](https://about.google/?fg=1&utm_source=google-JP&utm_medium=referral&utm_campaign=hp-header)のように文章が中途半端に改行されることを防ぎます。この処理には形態素解析ライブラリMeCabが必要です（前段のコマンドでインストールされます）。
+見出しを形態素解析して文節に分解することで、どことは言いませんが[こういうサイト](https://about.google/?fg=1&utm_source=google-JP&utm_medium=referral&utm_campaign=hp-header)のように文章が中途半端に改行されることを防ぎます。この処理には形態素解析ライブラリMeCabが必要です（前段のコマンドでインストールされます）。
 ### Muisto Codes
 記事に「Muisto Codes」というコードを埋め込むことで日付やタイトル、変換テーマを設定することができます。
 #### 全ファイルで使えるもの
@@ -44,7 +44,7 @@ GitHubのアカウントをmamoruitoiに設定します。
 - **@fav: "favicon.ico"**  
 サイトのファビコンを./img/favicon.icoに設定します。
 - **@url: "https://mamoruitoi.github.io/"**  
-サイトのURLをhttps://mamoruitoi.github.io/に設定します。**必ず最初に設定してください。また、最後のスラッシュまで含めてください。**
+サイトのURLを設定します。**必ず最初に設定してください。また、最後のスラッシュまで含めてください。**
 - **@name: "Oblivion"**  
 サイトの名前をOblivionに設定します。
 また、config.md内で@titleを使うとサイトのサブタイトルを設定できます。
