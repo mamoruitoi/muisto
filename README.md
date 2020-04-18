@@ -16,35 +16,35 @@ $ sudo pip install -e .
 ### Muisto Codes
 記事に「Muisto Codes」というコードを埋め込むことで日付やタイトル、変換テーマを設定することができます。
 #### 全ファイルで使えるもの
-- @cover: "hoge.png"
+- **@cover: "hoge.png"**
 ./img/hoge.pngをカバー画像に設定します。
-- @date: "0900-0418-2020"
+- **@date: "0900-0418-2020"**
 日付を2020年4月18日午前9時に設定します。
-- @mode: "blog"
+- **@mode: "blog"**
 モードをblogに設定します。config.mdでモードごとにデフォルトの設定を決めることができます。config.mdでモードごとに設定を書くと、各ファイルにはモード名を書くだけでそのデフォルト設定が適用されます。また、モードごとに記事のインデックスページが自動で生成されます。
-- @place: "Tokyo"
+- **@place: "Tokyo"**
 記事を書いた場所をTokyoに設定します。
-- @tags: "Muisto|Web|Design"
+- **@tags: "Muisto|Web|Design"**
 記事に「Muisto」「Web」「Design」という3つのタグを付けます。
-- @writer: "Mamoru Itoi"
+- **@writer: "Mamoru Itoi"**
 書いた人をMamoru Itoiに設定します。
-- @theme: "muisto_light"
+- **@theme: "muisto_light"**
 記事のテーマをmuisto_lightに設定します（今のところこれしかないけど気が向いたら追加する）。
 #### config.mdでだけ使えるもの
-- @icon: "nights_stay"
+- **@icon: "nights_stay"**
 ナビゲーションバーに表示する、そのモードの[マテリアルアイコン](https://material.io/resources/icons/?style=baseline)をnights_stayに設定します。
-- @color: "#aaa"
+- **@color: "#aaa"**
 ナビゲーションバーに表示するモードごとのインデックスページへのリンクの色を#aaaに設定します。
-- @twitter: "MamoruItoi"
+- **@twitter: "MamoruItoi"**
 TwitterのアカウントをMamoruItoiに設定します。
-- @github: "mamoruitoi"
+- **@github: "mamoruitoi"**
 GitHubのアカウントをmamoruitoiに設定します。
-- @logo: "oblivion-logo.png"
+- **@logo: "oblivion-logo.png"**
 サイトのロゴを./img/oblivion-logo.pngに設定します。
-- @fav: "favicon.ico"
+- **@fav: "favicon.ico"** 
 サイトのファビコンを./img/favicon.icoに設定します。
-- @url: "https://mamoruitoi.github.io/"
+- **@url: "https://mamoruitoi.github.io/"**
 サイトのURLをhttps://mamoruitoi.github.io/に設定します。**必ず最初に設定してください。また、最後のスラッシュまで含めてください。**
-- @name: "Oblivion"
+- **@name: "Oblivion"**
 サイトの名前をOblivionに設定します。
 また、config.md内で@titleを使うとサイトのサブタイトルを設定できます。
