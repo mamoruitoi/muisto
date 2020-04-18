@@ -1,0 +1,3 @@
+[console_scripts]
+muisto = app:main
+

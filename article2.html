@@ -1,0 +1,163 @@
+<html>
+	<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+		<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.css" integrity="sha256-eN7gD6kRzzeXS87cycVGlO3smXA9o+yeN0BDkTVaOc0=" crossorigin="anonymous">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.js" integrity="sha256-2AzmZuC/JWSxd9zvzxqNIBQIoB/uSRsSYtXJBhAkfjY=" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="./muisto/themes/muisto_light/prettify.css">
+		<link rel="stylesheet" type="text/css" href="./muisto/themes/muisto_light/main.css">
+		<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+		<title>Mamoru's Website</title>
+		<script>(function(d){var config = {kitId: 'hdm7ghc',scriptTimeout: 3000,async: true},h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/wf-loading/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)})(document);</script>
+		<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+	</head>
+	<body>
+		<header>
+			<div class="nav">
+				<div class="left">
+					<div class="logo">
+						<a href="https://mamoruitoi.github.io/" target="_blank"><img src="img/oblivion-logo.png" width="auto" height="100%"></a>
+					</div>
+					<div class="title">
+						<h1>学生Pythonプログラマの日常</h1>
+					</div>
+				</div>
+				<div class="right">
+					<ul class="sns">
+						<li><a href="https://twitter.com/MamoruItoi" target="_blank"><img src="img/twitter.png" width="auto" height="70%"></a></li>
+						<li><a href="https://github.com/mamoruitoi" target="_blank"><img src="img/github.png" width="auto" height="70%"></a></li>
+						<li><a href="https://qiita.com/MamoruItoi" target="_blank"><img src="img/qiita.png" width="auto" height="70%"></a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<div class="nav-button">
+			<div class="fixed-action-btn">
+  			<a class="btn-floating btn-large blue"><i class="material-icons button-color">bubble_chart</i></a>
+				<script>
+				document.addEventListener("DOMContentLoaded", function() {
+					var elems = document.querySelectorAll(".fixed-action-btn");
+					var instances = M.FloatingActionButton.init(elems, {
+						direction: "top"
+					});
+				});
+				</script>
+				<ul class="google">
+    			<li><a href="#" class="btn-floating red lighten-2"><i class="material-icons">home</i></a></li>
+    			<li><a href="https://qiita.com/itoppy18" class="btn-floating amber lighten-2"><i class="material-icons">account_circle</i></a></li>
+    			<li><a href="https://twitter.com/shinkaimakoto" class="btn-floating teal lighten-2"><i class="material-icons">build</i></a></li>
+    			<li><a href="https://krunker.io/" class="btn-floating blue lighten-2"><i class="material-icons">event</i></a></li>
+					<li><a href="https://tenkinoko.com/" class="btn-floating purple lighten-3"><i class="material-icons">explore</i></a></li>
+  			</ul>
+			</div>
+		</div>
+			<div class="muisto-header">
+				<img src="img/header.png" width="95%" height="auto">
+				<h1>Tag:Web</h1>
+			</div>
+			<div class="main">
+			<p>※SSG……静的サイトジェネレータ（Static Site Generator）。MarkDownでファイルを書くだけで綺麗なサイトが作れてしまう魔法のソフト。</p>
+			<h2><span>おことわり</span></h2>
+			<p>本日は雨天なり。あと、さも1日で作ったかのようなタイトルですが2か月ほどかかりました。はい、タイトル詐欺です。</p>
+			<h2><span>君の名は。</span></h2>
+			<p>糸井主歩（いとい・まもる）です。Pythonを書いてかれこれ2年の学生プログラマ。RADWIMPSと新海誠監督と言語学と、あとモッツァレラチーズの入ったピザが好きです。</p>
+			<h2><span>概要</span></h2>
+			<p>早い話が、サイトリニューアル（n回目）したぜ見てくれ！ ってことです。n=4あたりの今回は、ブログを「ほぼ毎日更新」とか言っておきながら結局更新せず放置していたという僕の怠惰を改善しました（つまり改善したのはソースコードではなく精神である）。で、ブログを更新するときにテンションが上がるようなデザインにしてみました。<a href="https://apple.com/jp/newsroom/" target="_blank">AppleのNewsroom</a>とか参考にしたかな。結果としてあまり似てないけど。</p>
+			<h2><span>なぜ</span><span>今まで</span><span>ブログを</span><span>更新</span><span>できなかった</span><span>のか</span><span>？</span></h2>
+			<p>1投稿ごとにHTMLを直書きしてたからです。</p>
+			<p>というわけで、MarkDown書いてコマンド一発で済むように静的サイトジェネレータを使いました。で、JekyllとかHugoとかを使えばいいものを今回はMarkDown→HTMLの変換から自作しました。鬼畜の作戦です。つまりは自作静的サイトジェネレータです。ヤッホイ！</p>
+			<h2><span>名前は</span><span>「Muisto」だよ</span></h2>
+			<p>で、なんか僕ってプロダクト始める前に名前を考えるのですよ。たとえソースコード1行も書かずにボツにしたとしても、名前だけは付いてます（あゝ、結局作らなかったあのソフトウェアたちよ……）。名前を決めるときに「このプロダクトはこういうものにしたい」っていうのが明確になる気もしますしね。例えば「pirka」は、アイヌ語で「美しい」「良い」という意味があります。そうするとやっぱりそのプロダクトは美しく、良いものにしたいって思ったりとか（エラソーに言ってるがそこまで深く考えてない）。</p>
+			<p>まあともかく、この静的サイトジェネレータ君に、僕は「Muisto」という名前を付けました。これはフィンランド語で「記憶」という意味です。人の記憶って、コンピュータのメモリ上に記録されている情報とはまったく異なるんだと思うんですよ。記憶に喜びがあったり、悲しみがあったり、郷愁があったり。かと思えば、ずっと覚えていたかったことをすぐに忘れたり、どうでもいいことばかり覚えていたり。小説家・プロデューサの川村元気さんも、「ひとは大切なことを忘れていく。けれども、そこに抗おうともがくことで生を獲得するのだ」と述べています。人間の記憶は脆いけれど、だからこそ大切にとっておきたい。そんなブログを作りたくて、この名前にしました。</p>
+			<h3><span>Why</span><span>&nbsp;</span><span>フィンランド語</span><span>？</span></h3>
+			<p>日本語と同じ<a href="https://ja.wikipedia.org/wiki/膠着語" target="_blank">膠着語</a>で面白そうだったから（小並感）。</p>
+			<h2><span>「（リファレンスの）</span><span>字が</span><span>小さ</span><span>すぎて</span><span>読めなァ</span><span>い</span><span>！」</span></h2>
+			<p>本当に世の中の静的サイトジェネレータのリファレンスは、字が小さくて読めないですね。仕様が理解できません。ハズキルーペを買う余裕はないので、「<strong>自分で作れば世界で一番自分が詳しくなれるぞ</strong>」というヘリクーツ理論によって今回の作戦に至りました。この考え方はオープンソースソフトウェアの目的から逸脱していますね。ですがMuistoはオープンソースソフトウェアです。誰でも使えます！　使って！</p>
+			<h2><span>役に立つかも</span><span>しれない</span><span>機能</span></h2>
+			<p>Muistoは僕のサイトを作る目的で開発したので、僕自身の謎のこだわり要素をふんだんに盛り込んでおります。</p>
+			<h3><span>見出しを</span><span>読み</span><span>やすく</span></h3>
+			<p>HTMLに変換する際に、見出しを「文節」に分解しております。</p>
+			<h2><span>コードを</span><span>書いてみる</span></h2>
+<pre class="prettyprint linenums"><code class="lang-python">
+for i in range(10):
+	print("Hello World!")
+	#エンジニアブログのコメントの丁寧さ、それは彼の心の優しさを表す。
+</code></pre>
+			<p>これは、<span class="inline-code">Python</span>というプログラミング言語で書かれている。<span class="inline-code">for</span>というのはPythonの<strong>予約語</strong>のひとつで、後に続くリストから要素をなくなるまでひとつづつ取る、という処理を表す。</p>
+			<h2><span>リンクを</span><span>貼ってみる</span></h2>
+			<a href="#">
+				<div class="link">
+					<div class="img">
+						<img src="img/oblivion.png" width="auto" height="100%">
+					</div>
+					<div class="title">
+						<p><span>今日は</span><span>いい</span><span>天気なので</span><span>自作</span><span>SSGで</span><span>カッコいい</span><span>Webサイトを</span><span>作ってみた</span></p>
+						<p class="data">Blog / April 01, 2020</p>
+					</div>
+				</div>
+			</a>
+			<h2><span>Swiper</span><span>とやらを</span><span>使って</span><span>リンクの</span><span>インデックスを</span><span>作ってみる</h2>
+			<div class="swiper-container slider1">
+		    <div class="swiper-wrapper">
+        	<div class="swiper-slide">
+						<a href="#">
+							<div class="link">
+								<div class="img">
+									<img src="img/oblivion.png" width="auto" height="100%">
+								</div>
+								<div class="title">
+									<p><span>今日は</span><span>いい</span><span>天気なので</span><span>自作</span><span>SSGで</span><span>カッコいい</span><span>Webサイトを</span><span>作ってみた</span></p>
+									<p class="data">Blog / April 01, 2020</p>
+								</div>
+							</div>
+						</a>
+					</div>
+        	<div class="swiper-slide">
+						<a href="#">
+							<div class="link">
+								<div class="img">
+									<img src="img/oblivion.png" width="auto" height="100%">
+								</div>
+								<div class="title">
+									<p><span>今日は</span><span>いい</span><span>天気なので</span><span>自作</span><span>SSGで</span><span>カッコいい</span><span>Webサイトを</span><span>作ってみた</span></p>
+									<p class="data">Blog / April 01, 2020</p>
+								</div>
+							</div>
+						</a>
+					</div>
+        	<div class="swiper-slide">
+						<a href="#">
+							<div class="link">
+								<div class="img">
+									<img src="img/oblivion.png" width="auto" height="100%">
+								</div>
+								<div class="title">
+									<p><span>今日は</span><span>いい</span><span>天気なので</span><span>自作</span><span>SSGで</span><span>カッコいい</span><span>Webサイトを</span><span>作ってみた</span></p>
+									<p class="data">Blog / April 01, 2020</p>
+								</div>
+							</a>
+						</div>
+					</div>
+    		</div>
+    		<div class="swiper-button-next"></div>
+    		<div class="swiper-button-prev"></div>
+			</div>
+			<p>これは、作っている最中にテスト用の上記リンクがページの一番下に来て見づらくなってしまっているために書かれた、それ以外に何の目的もないただのテキストである。しかし本来、言語というのはそのような意味のないテキストを書くために用いるのではなく、人々の心を揺り動かし、その魂に感動を与える文章に用いなくてはならない<span style="letter-spacing: -0.1em;">——</span>などといったことを書いていたらちょうど「意味のないテキスト」にふさわしいくらいの分量のテキストが書けたので、この辺で。</p>
+		</div>
+		<footer>
+			<p>©2020 Mamoru Itoi<br><a href="https://twitter.com/MamoruItoi" target="_blank">Twitter</a></p>
+		</footer>
+		<script type="text/javascript">
+		var swiper = new Swiper('.swiper-container', {
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+		});
+		</script>
+	</body>
+</html>
