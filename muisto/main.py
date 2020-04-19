@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+# -*- coding: utf-8 -*-
 #Muisto: A Nostalgic Modern Static Site Generator
 #Developer: Mamoru Itoi(@MamoruItoi)
 
@@ -140,8 +141,7 @@ def generateFiles():
 """
             fav = f"""
 <link rel="shortcut icon" href="img/{fav}" type="image/vnd.microsoft.icon">
-<link rel="icon" href="img/{fav}" type="image/vnd.microsoft.icon">
-"""
+<link rel="icon" href="img/{fav}" type="image/vnd.microsoft.icon">"""
             templateOfHead1 = f"""
 <html>
 <head>
@@ -184,8 +184,7 @@ def generateFiles():
 </header>
 <div class="main">
 <div class="fixed-action-btn">
-<a class="btn-floating btn-large blue"><i class="material-icons button-color">bubble_chart</i></a>
-"""
+<a class="btn-floating btn-large blue"><i class="material-icons button-color">bubble_chart</i></a>"""
             script = """
 <script>
 document.addEventListener("DOMContentLoaded", function() {
@@ -194,14 +193,12 @@ var instances = M.FloatingActionButton.init(elems, {
 direction: "top"
 });
 });
-</script>
-"""
+</script>"""
             templateOfHead2 = """
 <ul class="google">
 {0}
 </ul>
-</div>
-"""
+</div>"""
 
             f.write(templateOfHead1)
             f.write(script)
@@ -216,8 +213,7 @@ direction: "top"
 <p>©2020 {data[fileName]["writer"]}<br><a href="https://twitter.com/{twitter}" target="_blank">Twitter</a></p>
 </footer>
 </body>
-</html>
-""")
+</html>""")
         print(htmlFileName)
 
 #MarkdownからHTMLへの変換
@@ -345,14 +341,10 @@ def convertMuistoCodes(fileName):
 <li class="shareList-item"><i class="small material-icons">share</i></li>
 <li class="shareList-item"><a class="icon icon-twitter" href="https://twitter.com/intent/tweet?text={7}%20-%20{8}%20{9}%0A{10}.html" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
 <li class="shareList-item"><a class="icon icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://mamoruitoi.github.io/" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a></li>
-</ul>
-""".format(cover, title, date, place, writer, mode, tags, data[fileName]["title"], config["top"]["name"], config["top"]["title"], config["top"]["url"]+fileName)
-    print(templateOfData)
+</ul>""".format(cover, title, date, place, writer, mode, tags, data[fileName]["title"], config["top"]["name"], config["top"]["title"], config["top"]["url"]+fileName)
     return templateOfData
 
 def generateIndexPages():
-    print(dataOfModes)
-    print(dataOfTags)
     for k1, v1 in dataOfModes.items():
         htmlFileName = f"../modes/{k1}.html"
         with codecs.open(htmlFileName, "w", "utf-8") as f:
@@ -365,12 +357,10 @@ def generateIndexPages():
             cover = config[k1]["cover"]
             logo = config["top"]["logo"]
             css = f"""
-<link rel="stylesheet" href="../muisto/themes/{config[k1]["theme"]}/main.css" type="text/css">
-"""
+<link rel="stylesheet" href="../muisto/themes/{config[k1]["theme"]}/main.css" type="text/css">"""
             fav = f"""
 <link rel="shortcut icon" href="../img/{fav}" type="image/vnd.microsoft.icon">
-<link rel="icon" href="../img/{fav}" type="image/vnd.microsoft.icon">
-"""
+<link rel="icon" href="../img/{fav}" type="image/vnd.microsoft.icon">"""
             templateOfHead1 = f"""
 <html>
 <head>
@@ -412,8 +402,7 @@ def generateIndexPages():
 </div>
 </header>
 <div class="fixed-action-btn">
-<a class="btn-floating btn-large blue"><i class="material-icons button-color">bubble_chart</i></a>
-"""
+<a class="btn-floating btn-large blue"><i class="material-icons button-color">bubble_chart</i></a>"""
             script = """
 <script>
 document.addEventListener("DOMContentLoaded", function() {
@@ -422,8 +411,7 @@ var instances = M.FloatingActionButton.init(elems, {
 direction: "top"
 });
 });
-</script>
-"""
+</script>"""
             templateOfHead2 = f"""
 <ul class="google">
 {generateButtons(config)}
@@ -433,8 +421,7 @@ direction: "top"
     <img src="../img/{config[k1]["cover"]}" width="95%" height="auto">
     <h1>Mode:{k1}</h1>
 </div>
-<div class="main">
-"""
+<div class="main">"""
 
             f.write(templateOfHead1)
             f.write(script)
@@ -451,8 +438,7 @@ direction: "top"
 <p>©2020 {config[k1]["writer"]}<br><a href="https://twitter.com/{twitter}" target="_blank">Twitter</a></p>
 </footer>
 </body>
-</html>
-""")
+</html>""")
         print(htmlFileName)
     for k1, v1 in dataOfTags.items():
         htmlFileName = f"../tags/{k1}.html"
@@ -466,12 +452,10 @@ direction: "top"
             cover = config["top"]["cover"]
             logo = config["top"]["logo"]
             css = f"""
-<link rel="stylesheet" href="../muisto/themes/{config["top"]["theme"]}/main.css" type="text/css">
-"""
+<link rel="stylesheet" href="../muisto/themes/{config["top"]["theme"]}/main.css" type="text/css">"""
             fav = f"""
 <link rel="shortcut icon" href="../img/{fav}" type="image/vnd.microsoft.icon">
-<link rel="icon" href="../img/{fav}" type="image/vnd.microsoft.icon">
-"""
+<link rel="icon" href="../img/{fav}" type="image/vnd.microsoft.icon">"""
             templateOfHead1 = f"""
 <html>
 <head>
@@ -513,8 +497,7 @@ direction: "top"
 </div>
 </header>
 <div class="fixed-action-btn">
-<a class="btn-floating btn-large blue"><i class="material-icons button-color">bubble_chart</i></a>
-"""
+<a class="btn-floating btn-large blue"><i class="material-icons button-color">bubble_chart</i></a>"""
             script = """
 <script>
 document.addEventListener("DOMContentLoaded", function() {
@@ -523,8 +506,7 @@ var instances = M.FloatingActionButton.init(elems, {
 direction: "top"
 });
 });
-</script>
-"""
+</script>"""
             templateOfHead2 = f"""
 <ul class="google">
 {generateButtons(config)}
@@ -534,8 +516,7 @@ direction: "top"
     <img src="../img/{config["top"]["cover"]}" width="95%" height="auto">
     <h1>Tag:{k1}</h1>
 </div>
-<div class="main">
-"""
+<div class="main">"""
 
             f.write(templateOfHead1)
             f.write(script)
@@ -552,8 +533,7 @@ direction: "top"
 <p>©2020 {config["top"]["writer"]}<br><a href="https://twitter.com/{twitter}" target="_blank">Twitter</a></p>
 </footer>
 </body>
-</html>
-""")
+</html>""")
         print(htmlFileName)
 
 #dataOfFilesを使って、ファイル内の@linkを生成する
@@ -574,8 +554,7 @@ def generateLink(fileName):
 <p class="data">{4} / {5}</p>
 </div>
 </div>
-</a>
-""".format(url, fileName, cover, title, mode, date)
+</a>""".format(url, fileName, cover, title, mode, date)
     return templateOfLink
 
 #タグのインデックスページへのリンクのHTMLを生成

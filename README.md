@@ -2,14 +2,11 @@
 「Muisto」はPython製の静的サイトジェネレータ（SSG）です。Markdownでファイルを書いてコマンドを実行すると自動で素敵なサイトを作ってくれます✨
 
 ## インストール方法
-このレポジトリの中身を、あなたのサイトのディレクトリの中にコピーしてから以下のコマンドを入力してください。  
 以下はMacの場合。事前にBrewをインストールしておいてください。
 
 ```bash:
 $ brew install mecab mecab-ipadic git curl xz
 $ git clone https://github.com/mamoruitoi/muisto.git
-$ cd /path-to-your-website>/muisto/
-$ sudo pip install -e .
 ```
 ## 使い方
 上記コマンドでインストールしたら、`/path-to-your-website/_post/`ディレクトリに変換したいMarkdownファイルを入れてください。  
@@ -17,7 +14,7 @@ $ sudo pip install -e .
 `/path-to-your-website/muisto/`ディレクトリから以下のコマンドを実行するとHTMLファイルとモード・タグごとのインデックスページが`/path-to-your-website/`以下に生成されます。
 
 ```bash:
-$ muisto .
+$ python3 main.py
 ```
 
 ## 機能
