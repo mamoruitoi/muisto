@@ -168,7 +168,7 @@ def generateFiles():
 <div class="nav">
 <div class="left">
 <div class="logo">
-<a href="{url}" target="_blank"><img src="img/{logo}" width="auto" height="100%"></a>
+<a href="{url}"><img src="img/{logo}" width="auto" height="100%"></a>
 </div>
 <div class="title">
 <h1>{config["top"]["title"]}</h1>
@@ -397,7 +397,7 @@ def generateIndexPages():
 <div class="nav">
 <div class="left">
 <div class="logo">
-<a href="{url}" target="_blank"><img src="../img/{logo}" width="auto" height="100%"></a>
+<a href="{url}"><img src="../img/{logo}" width="auto" height="100%"></a>
 </div>
 <div class="title">
 <h1>{config["top"]["title"]}</h1>
@@ -498,7 +498,7 @@ direction: "top"
 <div class="nav">
 <div class="left">
 <div class="logo">
-<a href="{url}" target="_blank"><img src="../img/{logo}" width="auto" height="100%"></a>
+<a href="{url}"><img src="../img/{logo}" width="auto" height="100%"></a>
 </div>
 <div class="title">
 <h1>{config["top"]["title"]}</h1>
@@ -708,3 +708,5 @@ def span(text):
         result += phraseResult + "</span>"
         phraseResult = ""
     return result
+
+main()
