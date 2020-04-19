@@ -1,20 +1,24 @@
-# Muisto Python製静的サイトジェネレータ
+# Muisto README
 「Muisto」はPython製の静的サイトジェネレータ（SSG）です。Markdownでファイルを書いてコマンドを実行すると自動で素敵なサイトを作ってくれます✨
+
 ## インストール方法
+このレポジトリの中身を、あなたのサイトのディレクトリの中にコピーしてから以下のコマンドを入力してください。  
 以下はMacの場合。事前にBrewをインストールしておいてください。
 
 ```bash:
 $ brew install mecab mecab-ipadic git curl xz
 $ git clone https://github.com/mamoruitoi/muisto.git
-$ cd muisto/muisto/
+$ cd /path-to-your-website>/muisto/
 $ sudo pip install -e .
 ```
+## 使い方
+上記コマンドでインストールしたら、`/path-to-your-website/_post/`ディレクトリに変換したいMarkdownファイルを入れてください。日付とかカバー画像とかの設定方法は下のMuisto Codesの記述を参考にしてください。`/path-to-your-website/muisto/`ディレクトリから以下のコマンドを実行するとHTMLファイルとモード・タグごとのインデックスページが`/path-to-your-website/`以下に生成されます。
 
 ## 機能
 ### 見出しを見やすく
 見出しを形態素解析して文節に分解することで、どことは言いませんが[こういうサイト](https://about.google/?fg=1&utm_source=google-JP&utm_medium=referral&utm_campaign=hp-header)のように文章が中途半端に改行されることを防ぎます。この処理には形態素解析ライブラリMeCabが必要です（前段のコマンドでインストールされます）。
 ### Muisto Codes
-記事に「Muisto Codes」というコードを埋め込むことで日付やタイトル、変換テーマを設定することができます。
+Markdownファイルの最初やconfig.mdに「Muisto Codes」というコードを書くことで日付やタイトル、変換テーマを設定することができます。
 #### 全ファイルで使えるもの
 - **@cover: "hoge.png"**  
 ./img/hoge.pngをカバー画像に設定します。
