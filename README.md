@@ -12,7 +12,13 @@ $ cd /path-to-your-website>/muisto/
 $ sudo pip install -e .
 ```
 ## 使い方
-上記コマンドでインストールしたら、`/path-to-your-website/_post/`ディレクトリに変換したいMarkdownファイルを入れてください。日付とかカバー画像とかの設定方法は下のMuisto Codesの記述を参考にしてください。`/path-to-your-website/muisto/`ディレクトリから以下のコマンドを実行するとHTMLファイルとモード・タグごとのインデックスページが`/path-to-your-website/`以下に生成されます。
+上記コマンドでインストールしたら、`/path-to-your-website/_post/`ディレクトリに変換したいMarkdownファイルを入れてください。  
+日付とかカバー画像とかの設定方法は下のMuisto Codesの記述をご参考に。  
+`/path-to-your-website/muisto/`ディレクトリから以下のコマンドを実行するとHTMLファイルとモード・タグごとのインデックスページが`/path-to-your-website/`以下に生成されます。
+
+```bash:
+$ muisto .
+```
 
 ## 機能
 ### 見出しを見やすく
