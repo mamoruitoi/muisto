@@ -329,7 +329,7 @@ def convertMuistoCodes(fileName):
     date = translate(data[fileName]["date"][5:7]) + " " + data[fileName]["date"][7:9] + ", " + data[fileName]["date"][10:]
     place = data[fileName]["place"]
     writer = data[fileName]["writer"]
-    mode = data[fileName]["mode"]
+    mode = "<a href=\"{0}modes/{1}.html\"><span class=\"mode\">{1}</span></a>".format(config["top"]["url"], data[fileName]["mode"])
     tags = generateTags(data[fileName]["tags"])
     templateOfData = """
 <img src="img/{0}" width="95%" height="auto">
