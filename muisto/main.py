@@ -334,8 +334,7 @@ def convertMuistoCodes(fileName):
     templateOfData = """
 <img src="img/{0}" width="95%" height="auto">
 <h1>{1}</h1>
-<p class="data"><span class="date">{2}</span><span class="place"><i class="tiny material-icons">location_on</i>{3}</span><span class="writer"><i class="tiny material-icons">create</i>{4}</span><br>
-<a href="https://mamoruitoi.github.io/"><span class="mode">{5}</span></a>{6}
+<p class="data"><span class="date">{2}</span><span class="place"><i class="tiny material-icons">location_on</i>{3}</span><span class="writer"><i class="tiny material-icons">create</i>{4}</span><br>{5}</span></a>{6}
 <hr color="#103670">
 <ul class="shareList">
 <li class="shareList-item"><i class="small material-icons">share</i></li>
