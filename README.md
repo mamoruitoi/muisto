@@ -6,6 +6,7 @@
 
 ```bash:
 $ brew install mecab mecab-ipadic git curl xz
+$ pip3 install mecab-python3
 $ git clone https://github.com/mamoruitoi/muisto.git
 ```
 ## 使い方
