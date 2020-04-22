@@ -12,13 +12,6 @@
 @github: "mamoruitoi"
 @logo: "oblivion-logo.png"
 
-# about
-@icon: "account_circle"
-@color: "amber lighten-2"
-@cover: "header.png"
-@theme: "muisto_light"
-@writer: "Your Name"
-
 # code
 @icon: "build"
 @color: "teal lighten-2"

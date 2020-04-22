@@ -56,3 +56,7 @@ GitHubのアカウントをmamoruitoiに設定します。
 - **@name: "Oblivion"**  
 サイトの名前をOblivionに設定します。
 また、config.md内で@titleを使うとサイトのサブタイトルを設定できます。
+
+# ライセンス
+本ソフトウェアは[MITライセンス](./README.md)で提供されています。
+（「自分のサイトで使いました！」「使われているのを見かけました！」という報告は大歓迎です！　[こちら](https://twitter.com/MamoruItoi)へお願いします）
