@@ -5,7 +5,7 @@
 @color: "red lighten-2"
 @writer: "Your Name"
 @place: "Tokyo"
-@url: "/URL-of-your-website"
+@url: "file:///Users/mamoruitoi/muisto/"
 @name: "Oblivion"
 @fav: "favicon.ico"
 @twitter: "Your Name"
@@ -14,21 +14,21 @@
 
 # code
 @icon: "build"
-@color: "teal lighten-2"
+@color: "amber lighten-2"
 @cover: "header.png"
 @theme: "muisto_light"
 @writer: "Your Name"
 
 # blog
 @icon: "event"
-@color: "blue lighten-2"
+@color: "teal lighten-2"
 @cover: "header.png"
 @theme: "muisto_light"
 @writer: "Your Name"
 
 # news
 @icon: "explore"
-@color: "purple lighten-3"
+@color: "blue lighten-2"
 @cover: "header.png"
 @theme: "muisto_light"
 @writer: "Your Name"
