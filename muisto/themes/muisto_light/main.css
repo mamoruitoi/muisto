@@ -1,10 +1,12 @@
 /* Main */
 body {
   background-color: #fff;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 h1 {
-  color: #545d87;
+  color: #005b7a;
   font-family: 'Noto Sans JP', sans-serif;
   font-feature-settings: "palt";
   font-size: 28px;
@@ -15,7 +17,7 @@ h1 {
 }
 
 h2 {
-  color: #545d87;
+  color: #005b7a;
   font-family: 'Noto Sans JP', sans-serif;
   font-weight: 700;
   font-feature-settings: "palt";
@@ -25,7 +27,7 @@ h2 {
 }
 
 h3 {
-  color: #848db7;
+  color: #e4c76f;
   font-family: 'Noto Sans JP', sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -34,7 +36,7 @@ h3 {
 }
 
 p {
-  color:#1d1d1f;
+  color: #3c4342;
   font-family: 'Noto Sans JP', sans-serif;
   font-feature-settings: "palt";
   font-size: 14px;
@@ -44,7 +46,7 @@ p {
 }
 
 p.data {
-  color: #545d87;
+  color: #3c4342;
   font-family: Futura, Lato, 'Noto Sans JP', sans-serif;
   font-weight: 500;
   margin: 0;
@@ -56,7 +58,7 @@ p.data span {
 }
 
 p span.date {
-  color: #103670;
+  color: #3c4342;
 }
 
 span.place i {
@@ -70,25 +72,24 @@ span.writer i {
 p span.tag {
   padding: 0px 7px;
   font-size: 16px;
-  color: #103670;
-  background-color: #fcfcfc;
+  color: #3c4342;
   border-radius: 8px;
   transition: 0.2s;
-  border: solid 1px #103670;
+  border: solid 1px #3c4342;
 }
 
 p span.tag:hover {
-  color: #e9e5eb;
-  border-color: #e9e5eb;
+  color: #005b7a;
+  border-color: #005b7a;
 }
 
 p span.mode {
-  color: #103670;
+  color: #3c4342;
   text-decoration: underline;
 }
 
 p span.mode:hover {
-  color: #e9e5eb;
+  color: #005b7a;
 }
 
 strike {
@@ -105,7 +106,7 @@ span {
 }
 
 span.inline-code {
-  background-color: #eae5ec;
+  background-color: #e4c76f;
   border-radius: 3px;
   padding: 0 3px;
   font-family: Menlo, Monaco, monospace;
@@ -128,12 +129,12 @@ img {
 }
 
 .button-color {
-  background-color: #545d87;
+  background-color: #005b7a;
 }
 
 ul:not(.sns):not(.shareList):not(.google) li:not(.l0):not(.l1):not(.L2):not(.L3):not(.L4):not(.L5):not(.L6):not(.L7):not(.L8):not(.L9):before {
-  content: "・";
-  color: #545d87;
+  content: "・ ";
+  color: #005b7a;
   font-family: 'Noto Sans JP', sans-serif;
   font-feature-settings: "palt";
   font-size: 14px;
@@ -147,7 +148,7 @@ ol:not(.linenums) {
 }
 
 ol:not(.linenums) li:before {
-    color: #545d87;
+    color: #005b7a;
     font-family: Futura, Lato, sans-serif;
     counter-increment: li;
     content: counter(li) ". ";
@@ -358,8 +359,8 @@ i.fab {
 /* Code */
 code.prettyprint, pre.prettyprint {
   width: 100%;
-  background-color: #545d87;
-  border: solid 10px #545d87;
+  background-color: #005b7a;
+  border: solid 10px #005b7a;
   margin: 20px 0px;
   padding: 0px;
   overflow: scroll;
@@ -368,7 +369,7 @@ code.prettyprint, pre.prettyprint {
 
 ol li.L0, li.L1, li.L2, li.L3, li.L4, li.L5, li.L6, li.L7, li.L8, li.L9 {
   z-index: 0;
-  background-color: #545d87;
+  background-color: #005b7a;
   margin-left: -35px;
 }
 
