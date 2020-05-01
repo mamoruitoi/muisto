@@ -176,8 +176,8 @@ def generateFiles():
 </div>
 <div class="right">
 <ul class="sns">
-<li><a href="https://twitter.com/{twitter}" target="_blank"><img src="{url}img/twitter.png" width="auto" height="70%"></a></li>
-<li><a href="https://github.com/{github}" target="_blank"><img src="{url}img/github.png" width="auto" height="70%"></a></li>
+<li><a href="https://twitter.com/{twitter}" target="_blank"><img src="{url}img/twitter.png" width="auto" height="100%"></a></li>
+<li><a href="https://github.com/{github}" target="_blank"><img src="{url}img/github.png" width="auto" height="100%"></a></li>
 </ul>
 </div>
 </div>
@@ -394,8 +394,8 @@ def generateIndexPages():
 </div>
 <div class="right">
 <ul class="sns">
-<li><a href="https://twitter.com/{twitter}" target="_blank"><img src="{url}img/twitter.png" width="auto" height="70%"></a></li>
-<li><a href="https://github.com/{github}" target="_blank"><img src="{url}img/github.png" width="auto" height="70%"></a></li>
+<li><a href="https://twitter.com/{twitter}" target="_blank"><img src="{url}img/twitter.png" width="auto" height="100%"></a></li>
+<li><a href="https://github.com/{github}" target="_blank"><img src="{url}img/github.png" width="auto" height="100%"></a></li>
 </ul>
 </div>
 </div>
@@ -489,8 +489,8 @@ direction: "top"
 </div>
 <div class="right">
 <ul class="sns">
-<li><a href="https://twitter.com/{twitter}" target="_blank"><img src="{url}img/twitter.png" width="auto" height="70%"></a></li>
-<li><a href="https://github.com/{github}" target="_blank"><img src="{url}img/github.png" width="auto" height="70%"></a></li>
+<li><a href="https://twitter.com/{twitter}" target="_blank"><img src="{url}img/twitter.png" width="auto" height="100%"></a></li>
+<li><a href="https://github.com/{github}" target="_blank"><img src="{url}img/github.png" width="auto" height="100%"></a></li>
 </ul>
 </div>
 </div>
