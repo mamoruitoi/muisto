@@ -10,7 +10,7 @@ $ pip3 install mecab-python3
 $ git clone https://github.com/mamoruitoi/muisto.git
 ```
 ## 使い方
-上記コマンドでインストールしたら、`/path-to-your-website/_post/`ディレクトリに変換したいMarkdownファイルを入れてください。  
+上記コマンドでインストールしたら、まず`config.md`の`@url`に自分のWebサイトのURLを設定しましょう。最後のスラッシュまでふくめてくださいね。そうしたら、`/path-to-your-website/_post/`ディレクトリに変換したいMarkdownファイルを入れてください。`article.md`を参考までに入れてあります。  
 日付とかカバー画像とかの設定方法は下のMuisto Codesの記述をご参考に。  
 `/path-to-your-website/muisto/`ディレクトリから以下のコマンドを実行するとHTMLファイルとモード・タグごとのインデックスページが`/path-to-your-website/`以下に生成されます。
 
